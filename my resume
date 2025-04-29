@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Full Stack Developer CV</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      width: 30%;
+      background: linear-gradient(to bottom, #fbb1f1, #f9d6ee);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .sidebar h3 {
+      text-align: left;
+      color: #000;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      text-align: left;
+    }
+
+    .sidebar a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    .main {
+      width: 70%;
+      padding: 40px 30px;
+      background-color: #ffffff;
+    }
+
+    .main h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .main h2 {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .main p, .main li {
+      line-height: 1.6;
+    }
+
+    .main ul {
+      padding-left: 20px;
+    }
+
+    .projects li {
+      margin-bottom: 5px;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="Фото">
+      <h3>Контакти:</h3>
+      <p>С: <a href="tel:+380930000000">+38 093 000 00 00</a></p>
+      <p>E: <a href="mailto:mymail@gmail.com">mymail@gmail.com</a></p>
+
+      <h3>Tech skills</h3>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Scrum</li>
+        <li>Agile</li>
+        <li>GTD</li>
+        <li>Teamwork</li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <h2>Full Stack Developer</h2>
+      <h1>Ім'я Прізвище</h1>
+      <p>
+        Lorem ipsum dolor sit amet. Et eligendi quisquam in itaque blanditiis in delectus aperiam.
+        Aut dolor officiis aut sapiente error ad quis tempore. Aut vitae molestiae sit quas optio est
+        pariatur praesentium aut voluptatum nostrum qui fuga molestiae.
+      </p>
+
+      <h2>Проєкти</h2>
+      <ol class="projects">
+        <li><a href="https://github.com">https://github.com</a> ....................... [ HTML5, CSS3 ]</li>
+        <li><a href="https://github.com">https://github.com</a> ....................... [ JavaScript ]</li>
+        <li><a href="https://github.com">https://github.com</a> ....................... [ CorelDraw, PhotoShop ]</li>
+      </ol>
+
+      <h2>Досвід роботи</h2>
+      <p class="bold">Front-End Developer Freelance</p>
+      <p>Вересень 202x – дотепер | Україна</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Aut dolor officiis aut sapiente error ad quis tempore</li>
+        <li>Aut vitae molestiae sit quas optio est pariatur praesentium aut voluptatum nostrum qui fuga molestiae.</li>
+        <li>Qui quia internos aut corporis similique sit veniam repellendus est dolorem asperiores.</li>
+      </ul>
+
+      <h2>Освіта</h2>
+      <p class="bold">Смілянський технологічний фаховий коледж</p>
+      <p>Фаховий молодший бакалавр з комп’ютерних наук</p>
+      <p>Вересень 202x – червень 202x | Україна</p>
+    </div>
+  </div>
+</body>
+</html>

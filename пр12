@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Переміщення об'єктів</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-color: #f0f0f0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .draggable {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      border-radius: 10px;
+      cursor: grab;
+      user-select: none;
+    }
+
+    #box1 { background-color: red; top: 50px; left: 50px; }
+    #box2 { background-color: green; top: 200px; left: 150px; }
+    #box3 { background-color: blue; top: 350px; left: 250px; }
+  </style>
+</head>
+<body>
+  <div id="box1" class="draggable"></div>
+  <div id="box2" class="draggable"></div>
+  <div id="box3" class="draggable"></div>
+
+  <script>
+    const draggables = document.querySelectorAll('.draggable');
+
+    draggables.forEach(box => {
+      let offsetX, offsetY, isDragging = false;
+
+      box.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        offsetX = e.clientX - box.offsetLeft;
+        offsetY = e.clientY - box.offsetTop;
+        box.style.cursor = 'grabbing';
+      });
+
+      document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+          box.style.left = (e.clientX - offsetX) + 'px';
+          box.style.top = (e.clientY - offsetY) + 'px';
+        }
+      });
+
+      document.addEventListener('mouseup', () => {
+        isDragging = false;
+        box.style.cursor = 'grab';
+      });
+    });
+  </script>
+</body>
+</html>
